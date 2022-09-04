@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab1</title>
+    <script src="https://kit.fontawesome.com/23ecf5d810.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Barra de Navegación-->
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="ASSETS/APLogo-20-20 (1).png" alt="" width="20%" height="..."></a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+
+                    <!-- Button trigger modal Botón para Loguearse -->
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user fa-2xl" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                        </i>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </div>
+        </nav>
+        </div>
+
+    </header>
+    <section id="dashboard" class="dashboard">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <!--Barra de Administración o Sidebar-->
+                <div class="col-3">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a href="/index1.html" target="_blank"><button class="nav-link active" id="v-pills-home-tab"
+                                    type="button">Home</button></a>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Datos Personales</button>
+                            <button class="nav-link" id="v-pills-miperf-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-miperf" type="button" role="tab" aria-controls="v-pills-miperf"
+                                aria-selected="false">Experiencia</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Educación</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Skills</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings1" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Proyectos</button>
+                        </div>
+                        <!--
+                        <div class="tab-content" id="v-pills-tabContent">
+                          
+ 
+                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" 
+                          tabindex="0">4</div>
+                          <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab" 
+                          tabindex="0">5</div>
+                        </div>-->
+                    </div>
+                </div>
+
+
+                <!--Body-->
+                <div class="col-9 tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <h4 class="text-center">Datos Personales</h4>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Foto de Perfil</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Mi nombre</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Título Sobre Mí</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Texto Sobre Mí</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-miperf" role="tabpanel" aria-labelledby="v-pills-miperf-tab" 
+                    tabindex="0">
+                        <h4 class="text-center">Experiencia</h4>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Logo</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Fechas</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Desc de Puesto</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Logo</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Fechas</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Desc de Puesto</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Logo</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Fechas</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Desc de Puesto</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <h4 class="text-center">Educación</h4>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">LogoEducación</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">FechasEducación</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Título</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Logo</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">FechasEducación</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Título</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Logo</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">FechasEducación</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Título</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <label for="customRange1" class="form-label">Example Range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+                        
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <h4 class="text-center">Proyecto</h4>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Foto del Proyecto</label>
+                            <input class="form-control" type="file" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Título</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Desc Lenguages</label>
+                            <input class="form-control" type="text" id="formFile">
+                            <button type="button" class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

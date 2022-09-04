@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PORFOLIO</title>
+    <script src="https://kit.fontawesome.com/23ecf5d810.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    </style>
+</head>
+
+<body id="body">
+    <!--Barra de Navegación-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="ASSETS/APLogo-20-20 (1).png" alt="" width="20%" height="..."></a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+
+                    <!-- Button trigger modal Botón para Loguearse -->
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user-lock fa-2xl" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                        </i>
+                    </li>
+                </ul>
+
+
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </div>
+        </nav>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Loguin</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal"
+                         aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="mb-3 row">
+                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control-plaintext" id="staticEmail"
+                                 value="email@dominio.com">
+                         </div>
+                     </div>
+                     <div class="mb-3 row">
+                         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                         <div class="col-sm-10">
+                             <input type="password" class="form-control" id="inputPassword">
+                         </div>
+                     </div>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+        <!--Banner
+        <div class="banner">
+            <img src="ASSETS/imagen computacion para banner4.jpg" class="img-fluid" alt="...">
+        </div>-->
+    </header>
+    <!--Sobre mí-->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container text-center">
+            <div class="row">
+                <!--Foto mía-->
+                <div class="col-3">
+                    <img src="ASSETS/foto Ale.jpg" alt="..." width="100%" title="Foto Alejandra">
+                    <h3 id="cursiva">Alejandra Visconti</h3>
+                    <h5>Programadora Full Stack Jr.</h5>
+                </div>
+                <div class="col-9">
+                    <h1>Sobre mí</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat velit fuga doloribus assumenda
+                        numquam
+                        ipsum iure qui voluptas cum. Blanditiis cupiditate laboriosam veritatis commodi recusandae, fuga
+                        dignissimos asperiores vel aliquam.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <br>
+        <!--Experiencia-->
+        <section id="experiencia" class="experiencia">
+            <h1>Experiencia</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/Logo Alcatel.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/Logo Sofrecom.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/Logo Telecom.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!--Educación-->
+        <section id="educación" class="educación">
+            <h1>Educación</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/UBA Veterinaria.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/EscudoLenguasVivas.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/APLogo-20-20 (1).png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!--Hard & Soft Skills"-->
+        <section id="Hard & Soft Skills" class="Hard & Soft Skills">
+            <h1>Hard & Soft Skills</h1>
+            <br>
+            <div class="container">
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span>80% Comunicación </span>
+                    </div>
+                </div>
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span>80% Liderazgo </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        <span>90% Adaptabilidad a los Cambios </span>
+                    </div>
+                </div>
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span>80% Complete </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Idiomas</h3>
+            <br>
+            <div class="container">
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <span>40% Inglés </span>
+                    </div>
+                </div>
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 99%">
+                        <span>100% Francés Bilingue </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!--Proyectos-->
+        <section id="proyectos" class="proyectos">
+            <h1>Proyectos</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="imagen" src="ASSETS/Mi Portfolio.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-1">
+                        <h3>Lorem ipsum.</h3>
+                    </div>
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti reprehenderit magnam
+                            nisi
+                            accusantium atque commodi quibusdam libero, tenetur doloribus natus iure iste quasi quaerat
+                            quod
+                            error ipsa ex. Maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
